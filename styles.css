@@ -1,0 +1,211 @@
+body {
+    background-color:whitesmoke;
+    overflow-x: hidden;
+}
+
+h1 {
+
+    font-style: italic;
+    padding-left: 150px;
+    padding-top: 50px;
+    color: black;
+    font-size: 55px;
+}
+
+
+#Contenedor {
+    display: flex;
+    /* justify-content: space-between; */ /* Comentamos esta lÃ­nea */
+    padding-left: 150px;
+
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    border-radius: 30px solid #AFAD4E;
+    width: 256px; /* Ajusta el ancho segÃºn tus necesidades */
+    height: 256px; /* Ajusta la altura segÃºn tus necesidades */
+    margin-right: 25px; /* Ajusta el margen entre las cajas segÃºn tus preferencias padding: 90px 20px;*/
+    padding-top: 15px;
+    padding-bottom: 105px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+
+    border: 1px solid #e1e1e1;
+    border-radius: 8px; /* Bordes redondeados para un aspecto mÃ¡s suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mÃ¡s pronunciada */
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.box1 img, .box2 img, .box3 img, .box4 img, .box5 img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: 100%; /* La imagen ocupa el 100% del contenedor */
+    /* Ajusta el tamaÃ±o de la imagen manteniendo su relaciÃ³n de aspecto y cubriendo completamente el contenedor */
+    margin:auto;
+}
+
+
+.box1:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaÃ±o de la caja al pasar el ratÃ³n sobre ella */
+
+}
+
+.box2:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaÃ±o de la caja al pasar el ratÃ³n sobre ella */
+
+}
+
+.box3:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaÃ±o de la caja al pasar el ratÃ³n sobre ella */
+
+}
+
+.box4:hover {
+    transform: scale(1.1);
+}
+
+.box5:hover {
+    transform: scale(1.1);
+}
+
+span {
+    font-family: Helvetica, Arial, sans-serif,"Apple Color Emoji","Segoe UI Emoji", "Noto Color Emoji";
+    font-size: 20px;
+    color: brown;
+    
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+
+footer {
+    
+    color: brown;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    width: 1290px; /* Ajusta el ancho segÃºn tus necesidades */
+ 
+}
+
+nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+    border-bottom: 2px solid brown; /* LÃ­nea recta entre elementos de la lista */
+}
+
+nav li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del Ãºltimo elemento de la lista */
+    border-bottom: none; /* Elimina la lÃ­nea en el Ãºltimo elemento para evitar duplicados */
+}
+
+nav a {
+    color: brown;
+    text-decoration: none;
+}
+
+.Derechos {
+    margin-top: 20px; /* Espacio entre la lista y el pÃ¡rrafo de derechos de autor */
+}
+
+
+#Publicacion {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+/* Estilo base del botón */
+button {
+    display: inline-block;
+    margin-left: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    transition: background-color 0.3s ease; /* Transición para suavizar cambios al pasar el ratón sobre el botón */
+}
+
+/* Cambia el color de fondo cuando se pasa el ratón sobre el botón */
+button:hover {
+    background-color: #2980b9; /* Nuevo color de fondo al pasar el ratón sobre el botón */
+}
+
+
+
+.flecha-container {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db; /* Color de fondo del botón */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    text-align: center;
+    line-height: 50px; /* Centra el contenido verticalmente */
+    color: #fff; /* Color del texto dentro del botón */
+    font-size: 18px; /* Tamaño del texto */
+    text-decoration: none; /* Elimina la subrayado del enlace */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo al pasar el ratón */          
+    font-size: 24px;
+    cursor: pointer;
+
+    background-color: #3498db;
+    color: white;
+    
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.flecha-izquierda {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db; /* Color de fondo del botón */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    text-align: center;
+    line-height: 50px; /* Centra el contenido verticalmente */
+    color: #fff; /* Color del texto dentro del botón */
+    font-size: 18px; /* Tamaño del texto */
+    text-decoration: none; /* Elimina la subrayado del enlace */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo al pasar el ratón */
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.flecha-container:hover, .flecha-izquierda:hover {
+    background-color: #2980b9; /* Color de fondo al pasar el ratón sobre el botón */
+}
+
+

@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="GCSQ7UxUnA9LbXjdvK7l8jHqt0AEjQiWyRVVeMwR-KA" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Digital Store</title>
+</head>
+<body>
+    <header>
+        <h1>Digital Store</h1>
+
+    </header>
+    
+
+    <div id="Contenedor">
+        
+        <div class="box1">
+            <img class="Imagen1" src="producto1.png" alt="Producto1">
+            <span>Licencia Windows 10</span>
+            <p class="descripcion1">$1000 USD</p>
+            <button>Comprar</button>
+        </div>
+        
+
+        <div class="box2">
+            <img class="Imagen2" src="producto2.png" alt="Producto2">
+            <span>Licencia Windows 11</span>
+            <p class="descripcion2">$2000 USD</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="box3">
+            <img class="Imagen3" src="producto3.png" alt="Producto3">
+            <span>Licencia Office</span>
+            <p class="descripcion3">$3000 USD</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="box4">
+            <img class="Imagen4" src="producto4.png" alt="Producto4">
+            <span>Licencia Office</span>
+            <p class="descripcion4">$4000 USD</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="flecha-izquierda" onclick="moverIzquierda()">←</div>
+        <div class="flecha-container" onclick="moverDerecha()">→</div>
+
+        <div class="box5">
+            <img class="Imagen5" src="producto5.png" alt="Producto5">
+            <span>Licencia Office</span>
+            <p class="descripcion5">$5000 USD</p>
+            <button>Comprar</button>
+        </div>
+
+        
+        
+
+    
+
+    </div>
+
+    <script>
+        function moverDerecha() {
+            var contenedor = document.getElementById('Contenedor');
+            contenedor.style.marginLeft = '-100%';
+        }
+
+        function moverIzquierda() {
+            var contenedor = document.getElementById('Contenedor');
+            contenedor.style.marginLeft = '0';
+        }
+    
+    </script>
+
+    <footer id="footer">
+        <nav>
+            <li><a href="#">Información al Usuario Financiero</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Defensa del Consumidor</a></li>
+            <p class="Derechos">©Tienda Digital.</p>
+        </nav>
+    </footer>
+
+
+
+</body>
+</html>
